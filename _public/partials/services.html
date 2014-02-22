@@ -1,0 +1,44 @@
+
+<h1>{{from}} - {{to}}</h1>
+<div class="row" ng-controller="BagCtrl">
+<div class="span9">
+	<div class="accordion" id="accordion">
+		<div class="accordion-group" ng-repeat="(service, offers) in services.list">
+		  <div class="accordion-heading">
+		    <a class="accordion-toggle" ng-class="{service_selected: bag.items[service] != undefined }" data-toggle="collapse" data-parent="#accordion" href="#{{service}}">
+		      {{service}}
+		    </a>
+		  </div>
+		  <div id="{{service}}" class="accordion-body collapse">
+		    <div class="accordion-inner">
+		    	<ul class="thumbnails row">
+					<li class="span3"
+						ng-class="{selected: bag.items[service] == name}" 
+						ng-repeat="(name, details) in offers" 
+						ng-click="toggle(service, name)">
+					    <div class="thumbnail">
+					      <img ng-src="img/{{details.image}}" alt="300x200">
+					      <div class="caption">
+					      	<h3>{{name}}</h3>
+					      	<p>{{details.description}}</p>
+					      </div>
+					    </div>
+				  	</li>
+				</ul>
+		    </div>
+		  </div>
+		</div>
+	</div>
+</div>
+<div class="span3">
+	<div class="relative">
+		<h3>Bag</h3>
+		<ul>
+			<li ng-repeat="item in bag.items">
+				{{item}}
+			</li>
+		</ul>
+		<button class="btn btn-large btn-primary"> Done </button>
+	</div>
+</div>
+</div>
