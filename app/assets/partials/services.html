@@ -20,7 +20,9 @@
 					      <img ng-src="img/{{details.image}}" alt="300x200">
 					      <div class="caption">
 					      	<h3>{{name}}</h3>
-					      	<p>{{details.description}}</p>
+					      	<div class="rating">
+					      		<i class="fa fa-star fa-2x" ng-repeat="star in stars_number(details.stars)"></i>
+					      	</div>
 					      </div>
 					    </div>
 				  	</li>

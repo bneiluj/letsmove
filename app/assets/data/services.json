@@ -1,106 +1,44 @@
 {
-	"Italy-London": {
-		"Bank": {
-			"Barclays": {
-				"image": "test.gif",
-				"description": "blablabla"
-			},
-			"NatWest": {
-				"image": "test.gif",
-				"description": "blablabla"
-			}
+	"Bank": {
+		"Barclays": {
+			"image": "barclays.jpg",
+			"stars": 3
 		},
-		"Phone": {
-			"Three": {
-				"image": "test.gif",
-				"description": "blablabla"
-			},
-			"Vodafone": {
-				"image": "test.gif",
-				"description": "blablabla"
-			},
-			"O2": {
-				"image": "test.gif",
-				"description": "blablabla"
-			}
+		"NatWest": {
+			"image": "natwest.jpg",
+			"stars": 2
+		},
+		"HSBC": {
+			"image": "hsbc.gif",
+			"stars": "blablabla"
 		}
 	},
-	"France-London": {
-		"Bank": {
-			"Barclays": {
-				"image": "test.gif",
-				"description": "blablabla"
-			},
-			"NatWest": {
-				"image": "test.gif",
-				"description": "blablabla"
-			}
+	"Phone": {
+		"Three": {
+			"image": "three.gif",
+			"stars": "blablabla"
 		},
-		"Phone": {
-			"Three": {
-				"image": "test.gif",
-				"description": "blablabla"
-			},
-			"Vodafone": {
-				"image": "test.gif",
-				"description": "blablabla"
-			},
-			"O2": {
-				"image": "test.gif",
-				"description": "blablabla"
-			}
-		}	
-	},
-	"USA-London": {	
-		"Bank": {
-			"Barclays": {
-				"image": "test.gif",
-				"description": "blablabla"
-			},
-			"NatWest": {
-				"image": "test.gif",
-				"description": "blablabla"
-			}
+		"Vodafone": {
+			"image": "vodafone.jpg",
+			"stars": "blablabla"
 		},
-		"Phone": {
-			"Three": {
-				"image": "test.gif",
-				"description": "blablabla"
-			},
-			"Vodafone": {
-				"image": "test.gif",
-				"description": "blablabla"
-			},
-			"O2": {
-				"image": "test.gif",
-				"description": "blablabla"
-			}
+		"giffgaff": {
+			"image": "giffgaff.jpg",
+			"stars": "blablabla"
 		}
 	},
-	"California-London": {
-		"Bank": {
-			"Barclays": {
-				"image": "test.gif",
-				"description": "blablabla"
-			},
-			"NatWest": {
-				"image": "test.gif",
-				"description": "blablabla"
-			}
+	"Rentig": {
+		"GumTree": {
+			"image": "gumtree.png",
+			"stars": "blablabla"
 		},
-		"Phone": {
-			"Three": {
-				"image": "test.gif",
-				"description": "blablabla"
-			},
-			"Vodafone": {
-				"image": "test.gif",
-				"description": "blablabla"
-			},
-			"O2": {
-				"image": "test.gif",
-				"description": "blablabla"
-			}
-		}	
+		"Spareroom": {
+			"image": "spareroom.gif",
+			"stars": "blablabla"
+		},
+		"EasyRoomate": {
+			"image": "easyroommate.gif",
+			"stars": "blablabla"
+		}
 	}
 }

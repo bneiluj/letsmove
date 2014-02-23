@@ -10,10 +10,12 @@
     	surname: 'Lanziani'
     }
 
-    $http.get('/data/from_to.json', function (data) {
+    $http.get('/data/from_to.json').success(function (data) {
       config["tos"] = data["to"];
       config["froms"] = data["from"];
-    })
+
+      console.log(data)
+    });
     $scope.user = config
   }
 

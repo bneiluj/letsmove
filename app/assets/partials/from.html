@@ -1,5 +1,5 @@
 <form name="form" class="form-inline"> I'm from 
-	<select type="text" ng-model="user.from" ng-options="user.froms" required></select> I'm moving to 
-	<select type="text" ng-model="user.to" ng-options="user.tos" required></select>
+	<select ng-model="user.from" ng-options="f for f in user.froms" required></select> I'm moving to 
+	<select ng-model="user.to" ng-options="t for t in user.tos" required></select>
 	<a class="btn" ng-hide="form.$invalid" ng-href="#/services?from={{user.from}}&to={{user.to}}">Go</a>
 </form>
