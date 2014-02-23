@@ -1,50 +1,51 @@
-
-<h1>From {{from}} to {{to}}</h1>
-<div class="row" ng-controller="BagCtrl">
-<div class="span10">
-	<div class="accordion" id="accordion">
-		<div class="accordion-group" ng-repeat="(service, offers) in services.list">
-		  <div class="accordion-heading">
-		    
-		    <h3><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#{{service}}">
-		      <i class="fa fa-check fa-lg" style="color:#1fa67a" ng-show="bag.items[service] != undefined"></i> <i class="fa fa-minus fa-lg" style="color:red" ng-show="bag.items[service] == undefined"></i> {{service}}
-		    </a></h3>
-		  </div>
-		  <div id="{{service}}" class="accordion-body collapse">
-		    <div class="accordion-inner">
-		    	<ul class="thumbnails row">
-					<li class="span3"
-						ng-class="{selected: bag.items[service] == name}" 
-						ng-repeat="(name, details) in offers" 
-						ng-click="toggle(service, name)">
-					    <div class="thumbnail">
-					      <div class="thumbnail-image">
-					      	<img ng-src="img/{{details.image}}" alt="300x200">
-					      </div>
-					      <div class="caption">
-					      	<h3>{{name}}</h3>
-					      	<div class="rating">
-					      		<i class="fa fa-star fa-2x" ng-repeat="star in stars_number(details.stars)"></i>
-					      		<i class="fa fa-star-o fa-2x" ng-repeat="star in empty_stars(details.stars)"></i>
-					      	</div>
-					      </div>
-					    </div>
-				  	</li>
-				</ul>
-		    </div>
-		  </div>
+<div>
+	<div class="page-header">
+		<h1>From {{from}} to {{to}}</h1>
+	</div>
+	<div class="row-fluid" ng-controller="BagCtrl">
+	<div class="span7 offset1" style="background: white;">
+		<div class="accordion" id="accordion">
+			<div class="accordion-group" ng-repeat="(service, offers) in services.list">
+			  <div class="accordion-heading">
+			    
+			    <h3><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#{{service}}">
+			      <i class="fa fa-check fa-lg" style="color:#1fa67a" ng-show="bag.items[service] != undefined"></i> <i class="fa fa-minus fa-lg" style="color:red" ng-show="bag.items[service] == undefined"></i> {{service}}
+			    </a></h3>
+			  </div>
+			  <div id="{{service}}" class="accordion-body collapse">
+			    <div class="accordion-inner">
+			    	<ul class="thumbnails row-fluid">
+						<li class="span4"
+							ng-repeat="(name, details) in offers" 
+							ng-click="toggle(service, name)">
+						    <div class="thumbnail offers" ng-class="{thumbnail_selected: bag.items[service] == name}" >
+						      <div class="thumbnail-image">
+						      	<img ng-src="img/{{details.image}}" alt="300x200">
+						      </div>
+						      <div class="caption">
+						      	<h3>{{name}}</h3>
+						      	<div class="rating">
+						      		<i class="fa fa-star fa-2x" ng-repeat="star in stars_number(details.stars)"></i>
+						      		<i class="fa fa-star-o fa-2x" ng-repeat="star in empty_stars(details.stars)"></i>
+						      	</div>
+						      </div>
+						    </div>
+					  	</li>
+					</ul>
+			    </div>
+			  </div>
+			</div>
 		</div>
 	</div>
-</div>
-<div class="span2">
-	<div class="relative">
-		<h2>Bag</h2>
-		<ul>
-			<li ng-repeat="item in bag.items">
-				{{item}}
-			</li>
-		</ul>
-		<button class="btn btn-large btn-primary"> Done </button>
+		<div class="span3 offset1">
+			<div class="bag">
+				<h2 style="color:#1fa67a">Bag</h2>
+					<p ng-repeat="item in bag.items">
+					{{item}}
+					</p>
+				
+			</div>
+			<a href='#/form' class="btn btn-large btn-primary">Done</a>
+		</div>
 	</div>
-</div>
 </div>

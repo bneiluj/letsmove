@@ -1,13 +1,13 @@
-<div class="container" ng-controller="User">
+<div class="container-fluid" ng-controller="User">
     <div class="page-header">
         <h1>
-          <img class="logo" src="img/letsmovetransparent.png"> </img><small>move made simple</small>
+          <img class="logo" src="img/letsmovetransparent.png"> </img>
        </h1>
     </div>
 	<div class="middle">
-		<div class="row">
-			<div class="span8 offset2">
-				<form name="form" class="form-inline"> I'm from 
+		<div class="row-fluid">
+			<div class="span10 offset1">
+				<form name="form" class="form-inline">I'm from 
 					<select ng-model="user.from" ng-options="f for f in user.froms" required></select> I'm moving to 
 					<select ng-model="user.to" ng-options="t for t in user.tos" required></select>
 					<a class="btn" ng-hide="form.$invalid" ng-href="#/services?from={{user.from}}&to={{user.to}}">Go</a>
