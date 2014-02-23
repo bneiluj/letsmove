@@ -44,33 +44,57 @@
     "Jobs": {
         "Monster": {
             "image": "monster.png",
+    		"stars":5,
             "description": "Find the job that's right for you. Use Monster's resources to create a killer CV, search for jobs, prepare for interviews, and launch your career."
         },
         "Jobsite": {
             "image": "jobsite.png",
+    		"stars":5,
             "description": "Start your job search with Jobsite, the award winning UK job search & jobs by email service. Send CVs to recruitment agencies & employers in 35 industries."
         },
         "Indeed": {
             "image": "job_search_indeed_en_GB.png",
+    		"stars":4,
             "description": "Job Search by Indeed. one search. all uk jobs. Search millions of jobs from thousands of job boards, newspapers, classifieds and company websites on ..."
         }
     },
     "Apps": {
         "Official London App": {
             "image": "official_london_app.jpg",
+    		"stars":4,
             "description": "Powered by visitlondon.com, this app shows you where to go and what to see in London. Quickly find out what's free near you and browse our must see recommendations. Available for iPhone and Android"
         },
         "Barclays Bikes App": {
             "image": "38266-310x174.jpg",
+    		"stars":5,
             "description": "Make getting around London by bike even easier with the Barclays Bikes ('Boris bikes') mobile app, showing you bike availability and routes to your nearest docking station. Available on iPhone and Android from the Barclays Cycle Hire website"
         },
         "CityMapper": {
             "image": "8843886117_ce0a1e2da6_z-520x346.jpg",
-            "description": "Unsure if you want to take a Hailo, a bus, walk or cycle to your destination? With a statement we can all understand, CityMapper is on a mission to ”save Londoners from London!” The highly rated app is loved by both locals and ex-pats who swear by its easy to use interface to get them where they need to go."
+            "description": "Unsure if you want to take a Hailo, a bus, walk or cycle to your destination? With a statement we can all understand, CityMapper is on a mission to ”save Londoners from London!” The highly rated app is loved by both locals and ex-pats who swear by its easy to use interface to get them where they need to go.",
+    		"stars":3
         },
         "Museum of London app": {
             "image": "60298-310x174.jpg",
-            "description": "This amazing iPhone and Android app from the Museum of London lets you travel back in time. Hold your camera up in the present day and watch as images from the past appear on screen! Learn more on the Museum of London's website"
+            "description": "This amazing iPhone and Android app from the Museum of London lets you travel back in time. Hold your camera up in the present day and watch as images from the past appear on screen! Learn more on the Museum of London's website",
+    		"stars":4
         }
+    },
+    "Schools": {
+    	"University of Westminster": {
+    		"image":"westm.png",
+    		"description":"The University of Westminster's English as a Foreign Language (EFL) programme, provides high quality English language teaching, right in the heart of London.",
+    		"stars":5
+    	},
+		"The London School of English": {
+    		"image":"londschool.png",
+    		"description":"The London School of English (LSE) is the world's oldest accredited English language school providing Business and Professional courses at our Holland Park",
+    		"stars":4
+    	},
+		"International House London": {
+    		"image":"ISL.png",
+    		"description":"Learn English full-time or part-time in London. English courses for all language levels. Day, evening & weekend English language classes + exam preparation.",
+    		"stars":4
+    	}
     }
 }

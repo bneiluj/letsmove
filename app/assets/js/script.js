@@ -289,7 +289,9 @@ jQuery(document).ready(function ($) {
 jQuery(document).ready(function ($) {
 	//Cache some variables
 	var arrows = $('#arrows div');
-	
+	$("#go_to_demo").click(function(e){
+		location = "/demo.html"
+	})
 	arrows.click(function(e) {
 		e.preventDefault();
 		

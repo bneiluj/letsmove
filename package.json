@@ -12,10 +12,11 @@
     "node": "~0.6.10 || 0.8 || 0.9"
   },
   "scripts": {
-    "start": "node_modules/.bin/brunch watch --server",
-    "test": "testacular start test/testacular.conf.js"
+    "postinstall": "brunch build --optimize=true && mv _public public",
+    "start": "node_modules/.bin/brunch watch --server"
   },
   "dependencies": {
+    "statik": ">= 1.1.0", 
     "brunch": ">= 1.4 < 1.5",
 
     "javascript-brunch": ">= 1.0 < 1.5",
@@ -30,6 +31,5 @@
     "clean-css-brunch": ">= 1.0 < 1.5"
   },
   "devDependencies": {
-    "testacular": ">= 0.4.0"
   }
 }
