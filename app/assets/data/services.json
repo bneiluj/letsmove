@@ -1,44 +1,76 @@
 {
-	"Bank": {
-		"Barclays": {
-			"image": "barclays.jpg",
-			"stars": 3
-		},
-		"NatWest": {
-			"image": "natwest.jpg",
-			"stars": 2
-		},
-		"HSBC": {
-			"image": "hsbc.gif",
-			"stars": 1
-		}
-	},
-	"Phone": {
-		"Three": {
-			"image": "three.jpg",
-			"stars": 4
-		},
-		"Vodafone": {
-			"image": "vodafone.jpg",
-			"stars": 5
-		},
-		"giffgaff": {
-			"image": "giffgaff.jpg",
-			"stars": 2
-		}
-	},
-	"Rentig": {
-		"GumTree": {
-			"image": "gumtree.png",
-			"stars": 1
-		},
-		"Spareroom": {
-			"image": "spareroom.gif",
-			"stars": 3
-		},
-		"EasyRoomate": {
-			"image": "easyroommate.gif",
-			"stars": 1
-		}
-	}
+    "Bank": {
+        "Barclays": {
+            "image": "barclays.jpg",
+            "stars": 3
+        },
+        "NatWest": {
+            "image": "natwest.jpg",
+            "stars": 2
+        },
+        "HSBC": {
+            "image": "hsbc.gif",
+            "stars": 1
+        }
+    },
+    "Phone": {
+        "Three": {
+            "image": "three.jpg",
+            "stars": 4
+        },
+        "Vodafone": {
+            "image": "vodafone.jpg",
+            "stars": 5
+        },
+        "giffgaff": {
+            "image": "giffgaff.jpg",
+            "stars": 2
+        }
+    },
+    "Rentig": {
+        "GumTree": {
+            "image": "gumtree.png",
+            "stars": 1
+        },
+        "Spareroom": {
+            "image": "spareroom.gif",
+            "stars": 3
+        },
+        "EasyRoomate": {
+            "image": "easyroommate.gif",
+            "stars": 1
+        }
+    },
+    "Jobs": {
+        "Monster": {
+            "image": "monster.png",
+            "description": "Find the job that's right for you. Use Monster's resources to create a killer CV, search for jobs, prepare for interviews, and launch your career."
+        },
+        "Jobsite": {
+            "image": "jobsite.png",
+            "description": "Start your job search with Jobsite, the award winning UK job search & jobs by email service. Send CVs to recruitment agencies & employers in 35 industries."
+        },
+        "Indeed": {
+            "image": "job_search_indeed_en_GB.png",
+            "description": "Job Search by Indeed. one search. all uk jobs. Search millions of jobs from thousands of job boards, newspapers, classifieds and company websites on ..."
+        }
+    },
+    "Apps": {
+        "Official London App": {
+            "image": "official_london_app.jpg",
+            "description": "Powered by visitlondon.com, this app shows you where to go and what to see in London. Quickly find out what's free near you and browse our must see recommendations. Available for iPhone and Android"
+        },
+        "Barclays Bikes App": {
+            "image": "38266-310x174.jpg",
+            "description": "Make getting around London by bike even easier with the Barclays Bikes ('Boris bikes') mobile app, showing you bike availability and routes to your nearest docking station. Available on iPhone and Android from the Barclays Cycle Hire website"
+        },
+        "CityMapper": {
+            "image": "8843886117_ce0a1e2da6_z-520x346.jpg",
+            "description": "Unsure if you want to take a Hailo, a bus, walk or cycle to your destination? With a statement we can all understand, CityMapper is on a mission to ”save Londoners from London!” The highly rated app is loved by both locals and ex-pats who swear by its easy to use interface to get them where they need to go."
+        },
+        "Museum of London app": {
+            "image": "60298-310x174.jpg",
+            "description": "This amazing iPhone and Android app from the Museum of London lets you travel back in time. Hold your camera up in the present day and watch as images from the past appear on screen! Learn more on the Museum of London's website"
+        }
+    }
 }
