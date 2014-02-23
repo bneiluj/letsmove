@@ -10,9 +10,15 @@
     $scope.to = $routeParams.to
     
     $http.get('/data/services.json').success(function (data) {
-      $scope.services['list'] = data[$routeParams.from+"-"+$routeParams.to];
+
+      $scope.services['list'] = data;
     });
-      
+    $scope.stars_number = function (number) {
+      return new Array(number);
+    }
+    $scope.empty_stars = function (number) {
+      return new Array(5-number);
+    }
   }
 
   controller.$inject = ["$scope", "$http", "$routeParams"];

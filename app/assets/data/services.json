@@ -1,0 +1,44 @@
+{
+	"Bank": {
+		"Barclays": {
+			"image": "barclays.jpg",
+			"stars": 3
+		},
+		"NatWest": {
+			"image": "natwest.jpg",
+			"stars": 2
+		},
+		"HSBC": {
+			"image": "hsbc.gif",
+			"stars": 1
+		}
+	},
+	"Phone": {
+		"Three": {
+			"image": "three.jpg",
+			"stars": 4
+		},
+		"Vodafone": {
+			"image": "vodafone.jpg",
+			"stars": 5
+		},
+		"giffgaff": {
+			"image": "giffgaff.jpg",
+			"stars": 2
+		}
+	},
+	"Rentig": {
+		"GumTree": {
+			"image": "gumtree.png",
+			"stars": 1
+		},
+		"Spareroom": {
+			"image": "spareroom.gif",
+			"stars": 3
+		},
+		"EasyRoomate": {
+			"image": "easyroommate.gif",
+			"stars": 1
+		}
+	}
+}
