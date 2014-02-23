@@ -8,7 +8,6 @@
     .config(['$routeProvider', function($routeProvider) {
       $routeProvider.when('/services', {templateUrl: 'partials/services.html', controller: "Services"});
       $routeProvider.when('/from', {templateUrl: 'partials/from.html'});
-      $routeProvider.when('/landing', {templateUrl: 'partials/landing.html'});
-      $routeProvider.otherwise({redirectTo: 'landing'});
+      $routeProvider.otherwise({redirectTo: 'from'});
     }]);
 })();
