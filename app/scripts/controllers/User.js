@@ -3,15 +3,21 @@
 
   var CONTROLLER_NAME = "User";
 
-  function controller($scope) {
+  function controller($scope, $http) {
     $scope.name = CONTROLLER_NAME;
-    $scope.user = {
+    var config = {
     	name: 'Luca',
     	surname: 'Lanziani'
     }
+
+    $http.get('/data/from_to.json', function (data) {
+      config["tos"] = data["to"];
+      config["froms"] = data["from"];
+    })
+    $scope.user = config
   }
 
-  controller.$inject = ["$scope"];
+  controller.$inject = ["$scope", "$http"];
 
   angular
     .module('myApp')

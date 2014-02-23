@@ -1,0 +1,19 @@
+{
+	"from": [
+		"Italy",
+		"France",
+		"Spain",
+		"Poland",
+		"Finland",
+		"Germany",
+		"Portugal"
+	],
+	"to": [
+		"London",
+		"SanFrancisco",
+		"NewYork",
+		"Rome",
+		"Paris",
+		"Berlin"
+	]
+}
